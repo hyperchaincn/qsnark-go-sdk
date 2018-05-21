@@ -5,26 +5,26 @@ type CTCode struct {
 }
 
 type Deploy struct {
-	Bin string `json:"Bin"`
+	Bin  string `json:"Bin"`
 	From string `json:"From"`
 }
 
 type PayloadReq struct {
-	Abi string
+	Abi  string
 	Args []string
 	Func string
 }
 
 type InvokeReq struct {
-	Const bool
-	From string
+	Const   bool
+	From    string
 	Payload string
-	To string
+	To      string
 }
 
 type MaintainReq struct {
 	Operation int
-	Payload string
-	From string
-	To string
+	Payload   string
+	From      string
+	To        string
 }

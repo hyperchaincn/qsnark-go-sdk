@@ -8,17 +8,17 @@ package model
   "scope": "all",
   "token_type": "
 }
- */
+*/
 type TokenResp struct {
-	AccessToken string `json:"access_token"`
-	ExpiresIn int `json:"expires_in"`
+	AccessToken  string `json:"access_token"`
+	ExpiresIn    int    `json:"expires_in"`
 	RefreshToken string `json:"refresh_token"`
-	Scope string `json:"scope"`
-	TokenType string `json:"token_type"`
+	Scope        string `json:"scope"`
+	TokenType    string `json:"token_type"`
 }
 
 type Resp struct {
-	Code int `json:"code"`
+	Code   int    `json:"code"`
 	Status string `json:"status"`
 }
 
@@ -29,8 +29,8 @@ type QueryBlockResp struct {
 
 type QueryBlockByPageResp struct {
 	Resp
-	List []Block `json:"List"`
-	Count int64 `json:"Count"`
+	List  []Block `json:"List"`
+	Count int64   `json:"Count"`
 }
 
 type QueryBlockByRangeResp struct {
@@ -50,19 +50,19 @@ type DeployResp struct {
 
 type DeploySyncResp struct {
 	Resp
-	TxHash string
-	PostState string
+	TxHash          string
+	PostState       string
 	ContractAddress string
-	Ret string
+	Ret             string
 }
 
 type CompileResult struct {
-	Id int
+	Id     int
 	Status string
-	Bin string
-	Abi string
-	Name string
-	OK bool `json:"OK"`
+	Bin    string
+	Abi    string
+	Name   string
+	OK     bool `json:"OK"`
 }
 
 type InvokeResp struct {
@@ -72,11 +72,11 @@ type InvokeResp struct {
 
 type InvokeSyncResp struct {
 	Resp
-	TxHash string
-	PostState string
+	TxHash          string
+	PostState       string
 	ContractAddress string
-	Ret string
-	DecodeRet string
+	Ret             string
+	DecodeRet       string
 }
 
 type MaintainResp struct {
@@ -91,7 +91,7 @@ type StatusResp struct {
 
 type TxCountResp struct {
 	Resp
-	Count int64
+	Count     int64
 	Timestamp int64
 }
 
@@ -102,10 +102,10 @@ type QueryTxResp struct {
 
 type TransactionTxreceiptResp struct {
 	Resp
-	TxHash string
-	PostState string
+	TxHash          string
+	PostState       string
 	ContractAddress string
-	Ret string
+	Ret             string
 }
 
 type DiscardTransactionResp struct {
@@ -115,11 +115,9 @@ type DiscardTransactionResp struct {
 
 type AccountResp struct {
 	Resp
-	Id int `json:"id"`
-	Address string `json:"address"`
-	Time string `json:"time"`
-	IsDisabled bool `json:"isDisabled"`
-	AppName string `json:"appName"`
+	Id         int    `json:"id"`
+	Address    string `json:"address"`
+	Time       string `json:"time"`
+	IsDisabled bool   `json:"isDisabled"`
+	AppName    string `json:"appName"`
 }
-
-
