@@ -1,17 +1,18 @@
 package qsnark
 
 import (
-	"qsnark-go-sdk/model"
-	"qsnark-go-sdk/options"
+	"github.com/hyperchaincn/qsnark-go-sdk/model"
+	"github.com/hyperchaincn/qsnark-go-sdk/options"
 	"testing"
 )
 
 func initApi() {
+
 	opt := options.Options{
-		Phone:        "",
-		Password:     "",
-		ClientId:     "",
-		ClientSecret: "",
+		Phone:        "18702604793",
+		Password:     "me123456",
+		ClientId:     "c4bc5803-8f2c-43e6-9961-9ff3cbd1f733",
+		ClientSecret: "9f5qzgZval3O7YKqp44m4jM74m03IN9S",
 	}
 	if err := InitQsnackApi(opt); err != nil {
 		panic(err)

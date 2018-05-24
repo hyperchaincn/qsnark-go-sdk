@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego/httplib"
-	"qsnark-go-sdk/model"
-	"qsnark-go-sdk/options"
+	"github.com/hyperchaincn/qsnark-go-sdk/model"
+	"github.com/hyperchaincn/qsnark-go-sdk/options"
 	"strconv"
 	"strings"
 )
@@ -342,6 +342,7 @@ func (q *QsnackApi) DiscardTransaction(start int64, end int64) (discardTransacti
 	if err = req.ToJSON(&discardTransactionResp); err != nil {
 		return discardTransactionResp, err
 	}
+	fmt.Println(req.GetRequest().URL.String())
 	if discardTransactionResp.Code != 0 {
 		return discardTransactionResp, errors.New(discardTransactionResp.Status)
 	}
