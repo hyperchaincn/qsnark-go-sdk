@@ -7,10 +7,10 @@ go get github.com/hyperchaincn/qsnark-go-sdk
 # 使用
 ```
 opt := options.Options{
-	Phone:        "18702604793",
-	Password:     "me123456",
-	ClientId:     "c4bc5803-8f2c-43e6-9961-9ff3cbd1f733",
-	ClientSecret: "9f5qzgZval3O7YKqp44m4jM74m03IN9S",
+	Phone:        " ",
+	Password:     " ",
+	ClientId:     " ",
+	ClientSecret: " ",
 }
 if err := qsnark.InitQsnackApi(opt); err != nil {
 	panic(err)
